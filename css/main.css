@@ -101,3 +101,47 @@ footer {
   background-color: black;
   color: white;
 }
+
+/* ====== Responsive layout ====== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap; /* navigatie breekt netjes af */
+  }
+
+  .text-box {
+    max-width: 600px;
+    padding: 1.5rem;
+  }
+
+  .profile-section img {
+    max-width: 250px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column; /* navigatie onder elkaar */
+    align-items: center;
+  }
+
+  .text-box {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .profile-section img {
+    max-width: 200px; /* foto kleiner */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* titel kleiner */
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
